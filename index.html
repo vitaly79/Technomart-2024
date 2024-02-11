@@ -5,19 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Интернет-магазин Техномарт</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
   <header class="page-header">
     <div class="header-wrapper">
-
       <div class="header-container-top">
         <a class="header-logo" href="#">
           <img class="logo" src="img/svg/logo-technomart.svg" width="108" height="18"
             alt="Логотип интернет-магазина Техномарт">
         </a>
-        <form class="header-form"></form>
+        <form class="header-form" action="#" method="post">
+          <label class="visually-hidden"></label>
+          <input class="header-form__input" type="text" name="" placeholder="Поиск:">
+        </form>
         <ul class="header-list">
           <li class="header-item">
             <a class="header-item__link" href="#">Закладки: 0</a>
@@ -26,22 +33,40 @@
             <a class="header-item__link" href="#">Корзина: 0</a>
           </li>
           <li class="header-item">
-            <a class="header-item__link" href="#">Оформить заказ</a>
+            <a class="header-item__link button--green" href="#">Оформить заказ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="header-big-wrapper">
+
+      <div class="header-container-middle">
+        <h1 class="header-heading">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <div class="header-address-container">
+          <a class="header-container-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <p class="header-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+        </div>
+        <ul class="account-list">
+          <li class="account-list__item">
+            <a class="account-list__link" href="#">Войти</a>
+          </li>
+          <li class="account-list__item">
+            <a class="account-list__link" href="#">Регистрация</a>
           </li>
         </ul>
       </div>
 
-      <div class="header-container-middle"></div>
       <nav class="page-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-item__link" href="#">Главная</a>
+            <a class="navigation-item__link">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-item__link" href="#">Компания</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item__link" href="#">Каталог</a>
+            <a class="navigation-item__link" href="catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-item__link" href="#">Новости</a>
@@ -63,32 +88,32 @@
   <main class="page-main">
     <div class="main-wrapper">
 
-      <section class="page-features">
-        <ul class="features-list">
-          <li class="page-features__item item-1 tag-new">
-            <p class="features-list__item">Материалы</p>
-            <a class="page-features__link" href="#">на любой вкус</a>
+      <section class="page-promo">
+        <ul class="promo-list">
+          <li class="page-promo__item item-1 tag-new">
+            <p class="promo-list__item">Материалы</p>
+            <a class="page-promo__link" href="#">на любой вкус</a>
           </li>
-          <li class="page-features__item item-2">
-            <p class="features-list__item">Инструмент</p>
-            <a class="page-features__link" href="#">на все случаи</a>
+          <li class="page-promo__item item-2">
+            <p class="promo-list__item">Инструмент</p>
+            <a class="page-promo__link" href="#">на все случаи</a>
           </li>
-          <li class="page-features__item item-3">
-            <p class="features-list__item">Техника</p>
-            <a class="page-features__link" href="#">для стройки</a>
+          <li class="page-promo__item item-3">
+            <p class="promo-list__item">Техника</p>
+            <a class="page-promo__link" href="#">для стройки</a>
           </li>
-          <li class="page-features__item item-4">
-            <p class="features-list__item">Перфораторы</p>
+          <li class="page-promo__item item-4">
+            <p class="promo-list__item">Перфораторы</p>
             <p class="item-4__description">настоящие мужские игрушки</p>
-            <a class="page-features__link" href="#">Открыть каталог</a>
+            <a class="page-promo__link" href="#">Открыть каталог</a>
           </li>
-          <li class="page-features__item item-5">
-            <p class="features-list__item">Скидки 50%</p>
-            <a class="page-features__link" href="#">на 350 товаров</a>
+          <li class="page-promo__item item-5">
+            <p class="promo-list__item">Скидки 50%</p>
+            <a class="page-promo__link" href="#">на 350 товаров</a>
           </li>
-          <li class="page-features__item item-6">
-            <p class="features-list__item">Доставка</p>
-            <a class="page-features__link" href="#">бесплатно</a>
+          <li class="page-promo__item item-6">
+            <p class="promo-list__item">Доставка</p>
+            <a class="page-promo__link" href="#">бесплатно</a>
           </li>
         </ul>
       </section>
@@ -206,20 +231,30 @@
       <section class="about">
         <div class="our-company">
           <h2 class="our-company__heading">компания «Техномарт»</h2>
-          <p class="our-company__description"></p>
-          <p class="our-company__description"></p>
+          <p class="our-company__description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
+            ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="our-company__description">Мы можем доставить ваш товар в самые отдаленные точки России!
+            Техномарт работает со многими транспортными компаниями:</p>
+          <ul class="about-list">
+            <li class="about-list__item">Деловые линии</li>
+            <li class="about-list__item">Автотрейдинг</li>
+            <li class="about-list__item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href="#">Подробнее о компании</a>
         </div>
+
         <div class="contacts">
           <h2 class="contacts__heading">Контакты</h2>
           <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис:</p>
+          <a class="button" href="#">Заблудились? Напишите нам!</a>
         </div>
       </section>
 
 
     </div>
-
-
   </main>
+
+
   <footer class="page-footer">
     <div class="footer-top">
       <a class="header-logo" href="#">
@@ -247,7 +282,7 @@
     <div class="footer-middle">
       <address class="company-address">
         г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
-        <a href="tel:+78005558628">+7 800 555-86-28</a> 
+        <a href="tel:+78005558628">+7 800 555-86-28</a>
       </address>
 
       <ul class="footer-">
@@ -268,8 +303,21 @@
     <div class="footer-bottom">
       <p class="copyright">© 2010–2021 Компания «Техномарт» Все права защищены</p>
       <ul class="socials-list">
-        <li><a href=""></a></li>
+        <li>
+          <a class="social-list__vk" href="#"></a>
+        </li>
+        <li>
+          <a class="social-list__facebook" href="#"></a>
+        </li>
+        <li>
+          <a class="social-list__instagram" href="#"></a>
+        </li>
       </ul>
+      <div class="footer-bootom-container">
+        <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p>Разработано — <a href="#">htmlacademy.ru</a></p>
+      </div>
+
     </div>
   </footer>
 </body>
