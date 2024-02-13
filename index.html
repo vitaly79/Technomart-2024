@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&display=swap"
     rel="stylesheet">
 </head>
@@ -22,7 +23,7 @@
             alt="Логотип интернет-магазина Техномарт">
         </a>
         <form class="header-form" action="#" method="post">
-          <label class="visually-hidden"></label>
+          <label class="visually-hidden">Найти</label>
           <input class="header-form__input" type="text" name="" placeholder="Поиск:">
         </form>
         <ul class="header-list">
@@ -119,8 +120,8 @@
       </section>
 
       <section class="popular-products">
-        <div class="">
-          <h2 class="">Популярные товары</h2>
+        <div class="section-heading">
+          <h2 class="section-heading__title">Популярные товары</h2>
           <a class="all-populars button" href="#">все популярные товары</a>
         </div>
         <ul class="">
@@ -140,8 +141,8 @@
       </section>
 
       <section class="popular-manufacturers">
-        <div class="">
-          <h2 class="">Популярные производители</h2>
+        <div class="section-heading">
+          <h2 class="section-heading__title">Популярные производители</h2>
           <a class="all-manufacturers button" href="#">все производители</a>
         </div>
         <ul class="manufacturers-list">
@@ -187,44 +188,47 @@
           </li>
         </ul>
       </section>
-      <section class="services">
-        <h2 class="services__heading">Сервисы</h2>
-        <p class="services__description"></p>
 
-        <div class="services-wrapper">
-          <ul class="services-list">
-            <li class="services-list__item">
-              <button class="services-list__button">Доставка</button>
-            </li>
-            <li class="services-list__item">
-              <button class="services-list__button">Гарантия</button>
-            </li>
-            <li class="services-list__item">
-              <button class="services-list__button">Кредит</button>
-            </li>
-          </ul>
-          <div class="services-container">
-            <div class="service-delivery">
-              <h2 class="services-list-heading services__heading">Доставка</h2>
-              <p class="services-list-description">Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем,
-                поднимая его на ваш этаж!</p>
-            </div>
-            <div class="service-warranty">
-              <h2 class="services-list-heading services__heading">Гарантия</h2>
-              <p class="services-list-description">Если купленный у нас товар поломается или заискрит, а также в случае
-                пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем
-                сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-            </div>
-            <div class="service-credit">
-              <h2 class="services-list-heading services__heading">Кредит</h2>
-              <p class="services-list-description">Залезть в долговую яму стало проще! Кредитные консультанты придут вам
-                на помощь.</p>
-              <a class="button" href="#">Отправить заявку</a>
+      <section class="services">
+        <div class="services__container">
+          <h2 class="services__heading">Сервисы</h2>
+          <p class="services__description"></p>
+          <div class="services-wrapper">
+            <ul class="services-list">
+              <li class="services-list__item">
+                <button class="services-list__button">Доставка</button>
+              </li>
+              <li class="services-list__item">
+                <button class="services-list__button">Гарантия</button>
+              </li>
+              <li class="services-list__item">
+                <button class="services-list__button">Кредит</button>
+              </li>
+            </ul>
+            <div class="services-container">
+              <div class="service-delivery">
+                <h2 class="services-list-heading services__heading">Доставка</h2>
+                <p class="services-list-description">Мы с удовольствием доставим ваш товар прямо
+                  к вашему подъезду совершенно бесплатно!
+                  Ведь мы неплохо заработаем,
+                  поднимая его на ваш этаж!</p>
+              </div>
+              <div class="service-warranty">
+                <h2 class="services-list-heading services__heading">Гарантия</h2>
+                <p class="services-list-description">Если купленный у нас товар поломается или заискрит, а также в
+                  случае
+                  пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+                  сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+              </div>
+              <div class="service-credit">
+                <h2 class="services-list-heading services__heading">Кредит</h2>
+                <p class="services-list-description">Залезть в долговую яму стало проще! Кредитные консультанты придут
+                  вам
+                  на помощь.</p>
+                <a class="button" href="#">Отправить заявку</a>
+              </div>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -257,7 +261,7 @@
 
   <footer class="page-footer">
     <div class="footer-top">
-      <a class="header-logo" href="#">
+      <a class="header-logo">
         <img class="logo" src="img/svg/logo-technomart.svg" width="138" height="23"
           alt="Логотип интернет-магазина Техномарт">
       </a>
@@ -269,7 +273,7 @@
           <a class="footer-navigation__link" href="#">Новости</a>
         </li>
         <li class="footer-navigation__item">
-          <a class="footer-navigation__link" href="#">Каталог</a>
+          <a class="footer-navigation__link" href="catalog.html">Каталог</a>
         </li>
         <li class="footer-navigation__item">
           <a class="footer-navigation__link" href="#">Доставка</a>
@@ -282,7 +286,7 @@
     <div class="footer-middle">
       <address class="company-address">
         г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
-        <a href="tel:+78005558628">+7 800 555-86-28</a>
+        <a class="company-address__phone" href="tel:+78005558628">+7 800 555-86-28</a>
       </address>
 
       <ul class="footer-">
@@ -300,22 +304,32 @@
         </li>
       </ul>
     </div>
+
     <div class="footer-bottom">
-      <p class="copyright">© 2010–2021 Компания «Техномарт» Все права защищены</p>
-      <ul class="socials-list">
-        <li>
-          <a class="social-list__vk" href="#"></a>
-        </li>
-        <li>
-          <a class="social-list__facebook" href="#"></a>
-        </li>
-        <li>
-          <a class="social-list__instagram" href="#"></a>
-        </li>
-      </ul>
-      <div class="footer-bootom-container">
-        <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p>Разработано — <a href="#">htmlacademy.ru</a></p>
+      <div class="footer-bottom__wrapper">
+        <p class="copyright">© 2010–2021 Компания «Техномарт» Все права защищены</p>
+        <ul class="socials-list">
+          <li class="socials-list__item social">
+            <a class="social__link social__link--vk" href="#"></a>
+          </li>
+          <li class="socials-list__item">
+            <a class="social__link social__link--facebook" href="#"></a>
+          </li>
+          <li class="socials-list__item">
+            <a class="social__link social__link--instagram" href="#"></a>
+          </li>
+        </ul>
+        
+        <div class="footer-links">
+          <p class="footer-links__email">
+            <span class="">Обратная связь:</span>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="footer-links__developer"> 
+            <span>Разработано —</span>
+            <a href="#">htmlacademy.ru</a>
+          </p>
+        </div>
       </div>
 
     </div>

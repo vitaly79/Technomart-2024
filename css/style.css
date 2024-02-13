@@ -71,6 +71,7 @@ body {
 .header-container-middle {
   width: 940px;
   margin: 0 auto;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,6 +96,10 @@ body {
   font-size: 21px;
   line-height: 30px;
   color: #EE3643;
+  background-image: url("../img/svg/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  text-decoration: none;
   text-align: center;
 }
 
@@ -141,6 +146,7 @@ body {
 .page-promo {
   width: 940px;
   margin: 0 auto;
+  margin-bottom: 59px;
 }
 
 .promo-list {
@@ -158,7 +164,7 @@ body {
 .page-promo__item {
   padding: 20px 22px;
 
-  outline: 1px solid grey; 
+  outline: 1px solid grey;
 }
 
 .promo-list .item-4 {
@@ -199,4 +205,216 @@ body {
   background-image: url("../img/svg/icon-5.svg");
   background-repeat: no-repeat;
   background-position: 80% 50%;
+}
+
+/* .popular-products */
+
+.popular-products {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 14px 26px 28px;
+  background-color: #F9F5F0;
+}
+
+.section-heading__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #32425C;
+}
+
+.section-heading .button {
+  width: 192px;
+  padding: 10px 24px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+
+
+/* .popular-manufacturers */
+
+.popular-manufacturers {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.manufacturers-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+.manufacturers-list__link {
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 145px;
+  outline: 1px solid rgb(47, 45, 27);
+}
+
+/* .services */
+
+.services {
+  background-color: #F1F5F7;
+}
+
+.services__container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 64px 0 99px;
+}
+
+
+/* .about */
+
+.about {
+  width: 940px;
+  margin: 0 auto;
+}
+
+
+
+/* footer */
+
+.page-footer {
+  background-color: #32425C;
+}
+
+.footer-top {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 540px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-navigation__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-navigation__link:hover {
+  text-decoration: underline;
+  color: #F1F5F7;
+}
+
+/* .footer-middle */
+
+.footer-middle {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.company-address {
+  max-width: 335px;
+  font-style: normal;
+  color: #fff;
+}
+
+.company-address__phone {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* .footer-bottom */
+
+.footer-bottom {
+  background-color: #293449;
+  color: #fff;
+}
+
+.footer-bottom__wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 36px 0 34px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.copyright {
+  margin: 0;
+  max-width: 230px;
+}
+
+.socials-list {
+  display: flex;
+  margin: 0;
+  gap: 1px;
+  list-style: none;
+}
+
+.social__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #212A3A;
+}
+
+.social__link:hover {
+  background-color: #EE3643;
+}
+
+.social__link--vk {
+  background-image: url("../img/svg/icon-vk.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social__link--facebook {
+  background-image: url("../img/svg/icon-fb.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social__link--instagram {
+  background-image: url("../img/svg/icon-insta.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.footer-links {
+  width: 288px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links p {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 1px;
+}
+
+.footer-links a {
+  color: #FFD180;
+  text-decoration: none;
 }
