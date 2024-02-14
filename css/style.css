@@ -52,6 +52,33 @@ body {
   box-shadow: 0px -5px 0px 0px #0000003D inset;
 }
 
+.header-logo:active {
+  background-color: #BA2732;
+}
+
+.header-form {
+  display: flex;
+  padding: 9px 18px;
+  align-items: center;
+  width: 271px;
+  height: 42px;
+}
+
+.header-form__icon {
+  fill: rgb(255, 255, 255, 0.3);
+}
+
+.header-form__input {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: 1px solid tomato;
+}
+
+.header-form__input:hover .header-form__icon {
+  color: #fff;
+}
+
 .header-list {
   display: flex;
   margin: 0;
@@ -60,8 +87,35 @@ body {
 }
 
 .header-item__link {
+  display: block;
+  padding: 9px 26px 9px 43px;
   color: #fff;
+  text-decoration: none;
 }
+
+.button--green {
+  background-color: #63A63E;
+  padding: 9px 16px 9px 19px;
+}
+
+.button--green:hover {
+  background-color: #5FBB2D;
+}
+
+
+.header-item__link svg {
+  fill: rgb(255, 255, 255, 0.3);
+}
+
+.header-item__link:hover svg {
+  fill: #fff;
+}
+
+.header-item__link:active {
+  background-color: #161D29;
+}
+
+
 
 .header-big-wrapper {
   padding: 46px 0 60px;
@@ -73,8 +127,8 @@ body {
   margin: 0 auto;
   margin-bottom: 40px;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  align-items: center;
 }
 
 .header-heading {
@@ -112,7 +166,45 @@ body {
 .account-list {
   display: flex;
   margin: 0;
+  gap: 10px;
   list-style: none;
+}
+
+.account-list__link {
+  display: block;
+  padding: 12px 24px;
+  font-size: 21px;
+  line-height: 21px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+.link-autorization {
+  padding-left: 19px;
+  display: flex;
+  align-items: center;
+}
+
+.link-autorization__icon {
+  fill: #C5C5C5;
+  margin-right: 14px;
+}
+
+.account-list__link:hover {
+  color: #EE3643;
+}
+
+.account-list__link:active {
+  color: #C5C5C5;
+}
+
+.account-list__link:hover svg {
+  fill: #3D546F;
+}
+
+.account-list__link:active svg {
+  fill: #C5C5C5;
 }
 
 .page-navigation {
@@ -207,6 +299,27 @@ body {
   background-position: 80% 50%;
 }
 
+.page-promo__link {
+  display: block;
+  width: 135px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.page-promo__link:hover {
+  background-color: rgba(197, 197, 197, 0.3);
+}
+
+.page-promo__link:active {
+  background-color: rgba(169, 169, 169, 0.3);
+}
+
 /* .popular-products */
 
 .popular-products {
@@ -285,11 +398,68 @@ body {
 /* .about */
 
 .about {
+  display: flex;
+  justify-content: space-between;
   width: 940px;
   margin: 0 auto;
+  padding: 70px 0 70px;
+}
+
+.our-company {
+  width: 460px;
+}
+
+.our-company__heading,
+.contacts__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.our-company__description {
+  margin: 0;
+  font-family: PT Sans;
+  font-size: 13px;
+}
+
+.our-company__description:last-child {
+  margin-bottom: 8px;
+}
+
+.about-list {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.about-list__item {
+  padding-left: 37px;
+  margin-bottom: 12px;
+}
+
+.about .button {
+  width: 220px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 
+
+.contacts {
+  width: 300px;
+}
+
+.contacts .button {
+  width: 100%;
+}
 
 /* footer */
 
@@ -327,8 +497,11 @@ body {
 /* .footer-middle */
 
 .footer-middle {
+  display: flex;
+  justify-content: space-between;
   width: 940px;
   margin: 0 auto;
+  padding: 24px 0 52px;
 }
 
 .company-address {
@@ -339,6 +512,29 @@ body {
 
 .company-address__phone {
   color: #fff;
+  text-decoration: none;
+}
+
+.footer-list {
+  display: flex;
+  width: 526px;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.footer-list__link {
+  text-decoration: none;
+  color: #FFD180;
+}
+
+.footer-list__link:hover {
+  text-decoration: underline;
+}
+
+.footer-list__link:active {
+  color: rgba(255, 209, 128, 0.5);
   text-decoration: none;
 }
 
