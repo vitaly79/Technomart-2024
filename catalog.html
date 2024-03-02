@@ -124,17 +124,23 @@
 
     <div class="catalog-wrapper">
       <ul class="breadcrumbs">
-        <li>
-          <a class="breadcrumbs__link" href="index.html"><span class="visually-hidden">На главную страницу</span></a>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--image" href="index.html">
+            <svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z" />
+              <path
+                d="M13.831 6.365L12 4.751V0H10V2.987L7.33201 0.635C7.31201 0.618 7.28901 0.612 7.26801 0.598C7.24297 0.579705 7.21617 0.56396 7.18801 0.551C7.15711 0.540195 7.12532 0.532163 7.09301 0.527C7.06201 0.521 7.03201 0.515 7.00001 0.515C6.96901 0.515 6.93901 0.521 6.90801 0.527C6.87554 0.531919 6.84369 0.5403 6.81301 0.552C6.78501 0.563 6.76001 0.581 6.73301 0.598C6.71201 0.612 6.68801 0.618 6.66901 0.635L0.171006 6.365C0.0162706 6.50291 -0.0375648 6.72187 0.0355779 6.9158C0.108721 7.10974 0.293738 7.23862 0.501006 7.24C0.622937 7.24035 0.740742 7.19586 0.832006 7.115L7.00001 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.03 6.85352 14.0198 6.55183 13.831 6.365Z" />
+            </svg>
+            <span class="visually-hidden">На главную страницу</span></a>
         </li>
-        <li>
-          <a class="breadcrumbs__link" href="#">Каталог</a>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
         </li>
-        <li>
+        <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="#">Инструмент</a>
         </li>
-        <li>
-          <a class="breadcrumbs__link" href="#">Перфораторы</a>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link">Перфораторы</a>
         </li>
       </ul>
       <div class="catalog-heading">
@@ -194,7 +200,7 @@
             <p class="sorting__heading">Сортировка</p>
             <ul class="sorting-list">
               <li>
-                <a class="sorting-list__link" href="#">По цене</a>
+                <a class="sorting-list__link sorting-list__link--active" href="#">По цене</a>
               </li>
               <li>
                 <a class="sorting-list__link" href="#">По типу</a>
@@ -202,11 +208,21 @@
               <li>
                 <a class="sorting-list__link" href="#">По функционалу</a>
               </li>
+            </ul>
+            <ul class="sorting-direction">
               <li>
-                <a class="sorting-list__link" href="#"><span class="visually-hidden">По возрастанию</span></a>
+                <a class="sorting-direction__link" href="#">
+                  <svg class="sorting-direction__icon sorting-direction__icon--active" width="11" height="10" viewBox="0 0 11 10"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 0L11 10L0 10" />
+                  </svg>
+                  <span class="visually-hidden">По возрастанию</span></a>
               </li>
               <li>
-                <a class="sorting-list__link" href="#"><span class="visually-hidden">По убыванию</span></a>
+                <a class="sorting-direction__link" href="#">
+                  <svg class="sorting-direction__icon" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 10L0 0H11" />
+                  </svg>
+                  <span class="visually-hidden">По убыванию</span></a>
               </li>
             </ul>
           </div>
@@ -217,8 +233,8 @@
               <div class="product-card__container">
                 <img class="product-card__image" src="img/bfg-6000.jpg" width="144" height="128"
                   alt="Перфоратор Bosch BFG 6000">
-                <button class="product-card__button product-card__button--buy" href="#">купить</button>
-                <button class="product-card__button product-card__button--favourite" href="#">В закладки</button>
+                <button class="product-card__button product-card__button--buy" type="button">купить</button>
+                <button class="product-card__button product-card__button--favourite" type="button">В закладки</button>
               </div>
               <p class="product-card__heading">Перфоратор BOSCH BFG 6000</p>
               <p class="product-card__discount">30500 Р.</p>
