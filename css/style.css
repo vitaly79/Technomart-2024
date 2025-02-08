@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -815,6 +820,10 @@ body {
 
 /* stylization catalog.html */
 
+.page-header--catalog {
+  margin-bottom: 0;
+}
+
 .catalog-main {
   font-family: 'PT Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -971,6 +980,7 @@ body {
 .sorting-list {
   width: 380px;
   margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -979,7 +989,7 @@ body {
 .sorting-list__link {
   display: block;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 17px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
@@ -1007,10 +1017,11 @@ body {
 }
 
 .sorting-direction__link {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .sorting-direction__icon {
+  display: block;
   fill: #C5C5C5;
 }
 

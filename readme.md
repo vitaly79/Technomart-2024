@@ -1,1 +1,2 @@
-За основу взят макет из Фигмы 2021 года.
+За основу взят [макет](https://www.figma.com/design/AdGCMMw8VBQPnO92BAA5W5/HTMLAcademy_Technomart) из Фигмы 2021 года.
+Открыть сайт в новом окне: <a href="https://vitaly79.github.io/Technomart-2024/index.html" target="_blank">ссылка</a>
